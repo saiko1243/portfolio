@@ -1,0 +1,223 @@
+@media screen and (max-width: 1350px){
+    .home-container-text h1{
+        font-size: 3em;
+    }
+    .subtitulo h3 {
+        font-size: 1.2em;
+    }
+    h1::after {
+
+        width: 26rem;
+        height: 6px;
+        margin-top: 16px;
+
+    }
+    .aside-conecte-se h2{
+        font-size: 1.5em;
+    }
+    .social-midias-id div, .instagram{
+        width: 45px;
+        height: 45px;
+        
+    }
+    .social-midias {
+        width: 575px;
+        height: 73px;
+    }
+    .home-container-text {
+        height: 656px;
+    }
+    .container-pros {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 35% 35%;
+        grid-template-areas:
+            "controls battery"
+            "phones microphones";
+        grid-row-gap: 20px;
+        grid-column-gap: 43px;
+        padding: 0px 51px;
+        align-content: center;
+        justify-content: space-around;
+    }
+    .pros{
+        height: 500px;
+    }
+    .lorem{
+        font-size: 40px;
+    }
+    .ponto h3{
+        font-size: 30px;
+        padding-left: 11px;
+    }
+    .reply p {
+        font-size: 20px;
+
+    }
+    .informacoes{
+        height: 550px;
+        max-width:500px;
+        min-width: 400px;
+    }
+    .container2{
+        height: 800px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .nav{
+        display: none;
+        flex-direction: column;
+        background: #7234ED;
+        top: 70px;
+        position: absolute;
+        left: 0px;
+        z-index: 2;
+        border-radius: 0px 15px 15px 0px;
+        height: 400px;
+                        }
+                        
+        .hamburguer{
+            display: flex;
+        }
+        .nav-btn{
+            width: 250px;
+            height: 60px;
+            padding: 0px;
+            margin: 0;
+            background: #7234ED;
+            justify-content: start;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-left: 30px;
+            border-radius: 15px;
+            font-size: 22px;
+        }
+    .l-header-container{
+    height: 70px;
+    }
+    
+    .logo{
+    max-width: 150px;
+}
+
+    .home-container-text h1{
+        font-size: 2.5em;
+        max-width: 350px;    }
+    
+     h1::after {
+         width: 20rem;
+         height: 4px;
+         margin-top: 12px;
+
+    }
+    .l-main-home-container{
+    flex-direction: column;
+    }
+    .subtitulo h3 {
+        font-size: 1em;
+        margin: 15px 0;
+    }
+    .home-container-text {
+    width: 300px;
+    align-items: center;
+    }
+    .div-input {
+        align-items: center;
+    }
+    .aside-conecte-se{
+        text-align: center;
+    }
+    .social-midias{
+        width: 376px;
+        height: 63px;
+        background: linear-gradient(160deg, rgb(236, 38, 143), rgb(100, 66, 151));
+        position: static;
+        right: 160px;
+        border-radius: 50px;
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+    }
+    .social-midias-id {
+        gap: 12px;
+    }
+    .pros{
+        height: 600px;
+        height: 815px;
+    }
+    .container-pros {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .container2{
+        flex-direction: column;
+    }
+
+    .informacoes {
+        height: 900px;
+        max-width: 411px;
+        min-width: 320px;}
+
+    .content {
+        max-width: 500px;
+        min-width: 325px;
+        }
+    .lorem {
+            font-size: 32px;
+        }
+        .footer-quests {
+            max-width: 1300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .info {
+            width: 45%;
+        }
+        .info a{
+            display: none;
+        }
+        .info a:first-child{
+            display: block;
+            font-size: 13px;
+        }
+        .ext {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .external{
+            height: 54px;
+        }
+        .external:first-child, .external:last-child{
+        display: none;
+    }
+        .bar_left{
+            width: 50px;
+        }
+        .bar_right{
+            width: 50px;
+        }
+        .bar{
+            width: 13px;
+            height: 13px;
+            border: 3px solid pink;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .nav-checked div {
+            width: 8px;
+            height: 8px;
+        
+        }
+        footer{
+            padding: 2px;
+        }
+    
+}
