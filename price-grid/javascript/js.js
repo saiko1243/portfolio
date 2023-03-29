@@ -6,16 +6,22 @@ let sombraL = document.querySelector(".sombra-l")
 
 btn1.addEventListener("click", ()=>{
         m.style.left = "unset"
-        m.style.right = "100%"
+        m.style.right = "102%"
         m.style.transform = "translateX(108%)";
         sombraL.style.display = "none"
+        btn1.style.backgroundColor = "#9d00ff";
+        btn2.style.backgroundColor = "transparent";
+        btn3.style.backgroundColor = "transparent";
     
     })
 btn2.addEventListener("click", ()=>{
-        m.style.right = "43%";
+        m.style.right = "44%";
         m.style.transform = "translateX(52%)";
         m.style.left = "unset";
         sombraL.style.display = "block";
+        btn1.style.backgroundColor = "transparent";
+        btn2.style.backgroundColor = "#9d00ff"
+        btn3.style.backgroundColor = "transparent";
 })
 btn3.addEventListener("click", ()=>{
 
@@ -23,6 +29,9 @@ btn3.addEventListener("click", ()=>{
         m.style.left = "unset";
         m.style.transform = "translateX(-2%)";
         sombraL.style.display = "block";
+        btn3.style.backgroundColor = "#9d00ff"
+        btn2.style.backgroundColor = "transparent";
+        btn1.style.backgroundColor = "transparent";
 })
 let view = document.documentElement.clientWidth;
 console.log(view)
