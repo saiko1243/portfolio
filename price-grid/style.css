@@ -22,18 +22,40 @@ header{
     height: 700px;
     background-color: rgba(77, 0, 77, 0);
     margin: 50px 0px;
-    display: grid;
-    grid-template-columns: 29% 21% 21% 21%;
-    grid-template-rows: 25% 75%;
-    grid-template-areas: 
-    "caixa_top1 caixa_top2 caixa_top3 caixa_top4"
-    "caixa_bottom1 caixa_bottom2 caixa_bottom3 caixa_bottom4"
-    ;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     padding: 20px;
     position: relative;
     left: 50%;
     transform: translatex(-50%);
+}
+.content{
+    margin-right: 15px;
+    gap: 15px;
+    width: 650px;
+    height: 700px;
+    background-color: rgba(77, 0, 77, 0);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 25% 75%;
+    grid-template-areas: 
+    "caixa_top2 caixa_top3 caixa_top4"
+    "caixa_bottom2 caixa_bottom3 caixa_bottom4"
+    ;
+    justify-content: center;
+    position: relative;
+    transition: 1s;
+}
+.table{
+    min-width: 250px;
+    display: grid;
+    grid-template-rows: 25% 75%;
+    grid-template-areas: 
+    "caixa_top1"
+    "caixa_bottom1";
+    gap: 15px;
+    margin-right: 10px;
 }
 .container_caixa_top1{
     grid-area: caixa_top1;
@@ -46,8 +68,16 @@ header{
     align-items: center;
     justify-content: center;
     color: rgb(167, 167, 167);
-
 }
+.container_caixa_bottom1{
+    grid-area: caixa_bottom1;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(167, 167, 167);
+}
+
 .container_caixa_top2{
     grid-area: caixa_top2;
     background-color: white;
@@ -67,15 +97,7 @@ header{
     border-radius: 40px;
     background-image: linear-gradient(to left, rgb(255, 125, 78), rgb(231, 56, 131));
 }
-.container_caixa_bottom1{
 
-    grid-area: caixa_bottom1;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: rgb(167, 167, 167);
-}
 .description{
     width: 100%;
     height: 65px;
@@ -99,11 +121,19 @@ header{
     grid-area: caixa_bottom3;
     background-color: white;
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 .container_caixa_bottom4{
     grid-area: caixa_bottom4;
     background-color: white;
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 .bola{
     width: 46px;
@@ -114,8 +144,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 8px;
-    margin-left: 8px;
+    margin: 0 8px;
     font-size: 30px;
 }
 .price1{
@@ -275,6 +304,11 @@ footer{
     .footer2{
         margin: auto;
         width: 1000px;
+    }
+    .navigation{
+        display: none;
+        position: absolute;
+        bottom: 0;
     }
 
 
