@@ -67,7 +67,7 @@
 
     }
 }
-@media screen and (max-width: 573px) {
+@media screen and (max-width: 573px){
     .navigation{
         width: 100%;
         height: 18px;
@@ -78,10 +78,8 @@
         background-color: rgb(252, 252, 252);
         border-radius: 0 0 15px 15px;
     }
+
     .btn1{
-        background-color: #9d00ff;
-    }
-    .btn1, .btn2, .btn3{
         width: 10px;
         height: 10px;
         border: 2px solid rgba(83, 29, 158, 0.459);

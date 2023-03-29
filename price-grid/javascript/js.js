@@ -4,34 +4,30 @@ let btn3 = document.querySelector(".btn3");
 let m = document.querySelector(".content");
 let sombraL = document.querySelector(".sombra-l")
 
-btn1.addEventListener("click", ()=>{
-        m.style.left = "unset"
-        m.style.right = "102%"
-        m.style.transform = "translateX(108%)";
-        sombraL.style.display = "none"
-        btn1.style.backgroundColor = "#9d00ff";
-        btn2.style.backgroundColor = "transparent";
-        btn3.style.backgroundColor = "transparent";
-    
-    })
-btn2.addEventListener("click", ()=>{
-        m.style.right = "44%";
-        m.style.transform = "translateX(52%)";
-        m.style.left = "unset";
-        sombraL.style.display = "block";
-        btn1.style.backgroundColor = "transparent";
-        btn2.style.backgroundColor = "#9d00ff"
-        btn3.style.backgroundColor = "transparent";
-})
-btn3.addEventListener("click", ()=>{
+let btn = [...document.querySelectorAll(".btn1")]
+let ri; let le; let transform; let dis; let sombradis; let Btn0Back; let Btn1Back; let Btn2Back;
 
-        m.style.right = "0px";
-        m.style.left = "unset";
-        m.style.transform = "translateX(-2%)";
-        sombraL.style.display = "block";
-        btn3.style.backgroundColor = "#9d00ff"
-        btn2.style.backgroundColor = "transparent";
-        btn1.style.backgroundColor = "transparent";
+function posicao (ri, le, transform, sombradis, btn0Back, btn1Back, btn2Back){
+        m.style.right = ri;
+        m.style.left = le;
+        m.style.transform = transform;
+        sombraL.style.display = sombradis;
+        btn[0].style.backgroundColor = btn0Back;
+        btn[1].style.backgroundColor = btn1Back;
+        btn[2].style.backgroundColor = btn2Back;
+}
+btn.map((e, i)=>{
+        e.addEventListener("click", ()=>{
+                if (i == 0){
+                        ri="102%"; le="unset"; transform="translateX(108%)"; sombradis="none"; btn0Back = "#9d00ff"; btn1Back = "transparent"; btn2Back = "transparent";
+                        posicao(ri, le, transform, sombradis, btn0Back, btn1Back, btn2Back)
+                }else if (i == 1){
+                        ri="44%"; le="unset"; transform="translateX(52%)"; sombradis="block"; btn0Back = "transparent"; btn1Back = "#9d00ff"; btn2Back = "transparent";
+                        posicao(ri, le, transform, sombradis, btn0Back, btn1Back, btn2Back)
+                }else if (i == 2){
+                        ri="-2%"; le="unset"; transform="translateX(-2%)"; sombradis="block"; btn0Back = "transparent"; btn1Back = "transparent"; btn2Back = "#9d00ff";
+                        posicao(ri, le, transform, sombradis, btn0Back, btn1Back, btn2Back)
+                }
+        })
 })
-let view = document.documentElement.clientWidth;
-console.log(view)
+
