@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href=".css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="pesquisa">
+            <label for="cidade" class="pesquisa_texto">Verifique o clima de uma Cidade:</label>
+            <div class="pesquisa_input">
+                <input type="text" name="" id="cidade" placeholder="Digite o nome da cidade">
+                <button type="submit" class="btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="nome_cidade">
+            <i class="fa-solid fa-location-dot"></i>
+            <i class="fa-solid fa-location-plus"></i>
+            <p class="cidade_nome">Cidade</p>
+            <div class="bandeira"></div>
+        </div>
+        
+        <span class="temperatura">20°</span>
+        <div class="ceu">
+            <span class="ceu_ceu">Céu Limpo</span>
+        </div>
+        <div class="umidade-vento">
+            <i class="fa-solid fa-droplet"></i>
+            <span class="umidade">74%</span>
+            <i class="fa-light fa-wind"></i>
+            <span class="vento">3.6km/h</span>
+        </div>
+    </div>
+
+</body>
+<script src="./js/js.js"></script>
+</html>

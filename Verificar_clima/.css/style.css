@@ -1,0 +1,105 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Puritan:wght@400;700&display=swap');
+*{
+    font-family: 'Puritan', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(37,135,136,1) 0%, rgba(45,49,253,1) 100%);
+    position: relative;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    margin-top: 250px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(65 55 153);
+    border-radius: 25px;
+    box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, 0.61);
+    padding: 35px 15px;
+}
+.pesquisa_texto{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 31px;
+    color: beige;
+    margin-bottom: 3px;
+}
+.pesquisa::after{
+    margin-top: 30px;
+    content: " ";
+    width: 98%;
+    height: 2px;
+    background-color: rgb(221 224 227);
+    display: block;
+}
+#cidade{
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    padding: 0px 10px;
+    width: 332px;
+    height: 34px;
+    margin-top: 6px;
+    border-radius: 6px;
+}
+button{
+    width: 31px;
+    height: 32px;
+}
+.nome_cidade{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 18px;
+}
+.cidade_nome{
+    margin-left: 3px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.temperatura{
+    font-size: 35px;
+    margin-top: 10px;
+}
+.ceu{
+    margin-top: 20px;
+}
+.ceu_ceu{
+    font-size: 30px;
+}
+.umidade-vento{
+    margin-top: 20px;
+    font-size: 25px;
+}
+.umidade{
+    border-right: 2px solid rgb(255, 255, 255);
+    padding-right: 4px;
+}
+.fa-magnifying-glass{
+    color: black;
+    font-size: 17px;
+}
+.fa-location-dot{
+    font-size: 25px;
+    margin-right: 5px;
+}
+.fa-droplet{
+    font-size: 20px;
+}
+.fa-wind{
+    font-size: 20px;
+}
+.fa-location-plus{
+    font-size: 20px;
+color: aqua;
+}
