@@ -227,12 +227,15 @@ main{
 
 .linguagens{
     width: 100vw;
-    background-color: var(--claro);
+    height: 950px;
+    background-image: url('../img/backgroung-linguagens.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 50px 0px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 40px 0;
     box-shadow: 1px 6px 7px rgb(136, 136, 136);
 }
 .linguagens-container{
