@@ -242,7 +242,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1200px;
+    max-width: 800px;
     height: 670px;
 }
 .sub2::after{
@@ -277,13 +277,20 @@ main{
 }
 .linguagem{
     background: var(--claro);
-    border-radius: 25px;
-    padding: 35px 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 5px 5px 5px 0px #2c2c2c61;
+    box-shadow: 5px 5px 5px 0px #2c2c2cb4;
     transition: 1s;
+    position: relative;
+}
+.container-descricao-linguagem{
+    position: absolute;
+    top: 58%;
+    color: rgb(224, 196, 255);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 7px;
+}
+.cards{
+    width: 100%;
 }
 .linguagem:hover{
     transform: scale(1.1);
@@ -295,12 +302,17 @@ main{
 }
 .linguagens-nome{
     font-family: 'PT Sans', sans-serif;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 700;
-
+    margin-bottom: 6px;
 }
 .linguagens-texto{
     font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    max-width: 181px;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.884);
 }
 #js{
     grid-area: js;
